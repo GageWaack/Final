@@ -11,31 +11,24 @@ namespace Final
 
         static public void WinLose()
         {
-            int win;
-            int loss;
             int ScoreWins = 0;
             int ScoreLoss = 0;
-            int round;
-            int PlayerCards = 0;
-            int PcCards = 0;
+            int playerCards = 0;
+            int pcCards = 0;
             int War;
 
-            if (PcCards < PlayerCards)
+            if (pcCards < playerCards)
             {
                 ScoreLoss++;
-                Write("You lost the round");
             }
-            else if (PlayerCards < PcCards)
+            else if (playerCards < pcCards)
             {
-
                 ScoreWins++;
-                WriteLine("You won the round");
             }   
             
-            else if (PlayerCards == PcCards)
+            else if (playerCards == pcCards)
             {
-                WriteLine("War has been initiated");
-                War
+               
             }
            
 
